@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'github_sign_in_page.dart';
+import 'facebook_sign_in_page.dart';
 
 class SignIn extends StatefulWidget {
   const SignIn({Key? key, required this.title}) : super(key: key);
@@ -50,7 +51,10 @@ class _SignInState extends State<SignIn> {
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Add sign-in logic here
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => FacebookSignInPage()),
+                );
               },
               style: ElevatedButton.styleFrom(
                 primary: Colors.blue,

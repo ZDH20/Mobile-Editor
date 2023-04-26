@@ -44,7 +44,7 @@ class _GitHubSignInPageState extends State<GitHubSignInPage> {
             TextField(
               controller: _usernameController,
               decoration: InputDecoration(
-                labelText: 'GitHub username',
+                labelText: 'GitHub Username',
                 border: OutlineInputBorder(),
               ),
             ),
@@ -53,7 +53,7 @@ class _GitHubSignInPageState extends State<GitHubSignInPage> {
               controller: _passwordController,
               obscureText: true,
               decoration: InputDecoration(
-                labelText: 'GitHub password',
+                labelText: 'GitHub Password',
                 border: OutlineInputBorder(),
               ),
             ),

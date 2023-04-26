@@ -25,19 +25,8 @@ class _SignUpPageState extends State<SignUpPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            DropdownButton<String>(
-              value: 'Please enter your information below:',
-              onChanged: (String? value) {
-                // TODO: Handle authentication method change
-              },
-              items: <String>[
-                'Please enter your information below:',
-              ].map<DropdownMenuItem<String>>((String value) {
-                return DropdownMenuItem<String>(
-                  value: value,
-                  child: Text(value),
-                );
-              }).toList(),
+            Text('Enter the following information',
+              style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 16),
             TextField(

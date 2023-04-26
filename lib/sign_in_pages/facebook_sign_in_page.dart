@@ -24,25 +24,14 @@ class _FacebookSignInPageState extends State<FacebookSignInPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            DropdownButton<String>(
-              value: 'Username and Password',
-              onChanged: (String? value) {
-                // TODO: Handle authentication method change
-              },
-              items: <String>[
-                'Username and Password',
-              ].map<DropdownMenuItem<String>>((String value) {
-                return DropdownMenuItem<String>(
-                  value: value,
-                  child: Text(value),
-                );
-              }).toList(),
+            Text('Username and Password',
+              style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 16),
             TextField(
               controller: _usernameController,
               decoration: InputDecoration(
-                labelText: 'Facebook username',
+                labelText: 'Facebook Username',
                 border: OutlineInputBorder(),
               ),
             ),
@@ -51,7 +40,7 @@ class _FacebookSignInPageState extends State<FacebookSignInPage> {
               controller: _passwordController,
               obscureText: true,
               decoration: InputDecoration(
-                labelText: 'Facebook password',
+                labelText: 'Facebook Password',
                 border: OutlineInputBorder(),
               ),
             ),
